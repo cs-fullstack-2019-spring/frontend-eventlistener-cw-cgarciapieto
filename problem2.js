@@ -1,10 +1,23 @@
-var titleButton =  document.getElementById("pElement");
-var mainButton = document.getElementById("main");
-var menuButton = document.getElementById("menu");
 
-function changeBackgroundColor(e)
+
+
+function changeBlue()
 {
-    titleButton.classList.add("blueBackground")
+    headerText.classList.add("blueBackground");
+    headerText.innerText = "1"
 }
 
-mainButton.onclick = changeBackgroundColor;
+
+function changeRed()
+{
+    headerText.classList.add("redBackground");
+    headerText.innerText = "2"
+}
+
+
+var oneButton = document.getElementById("changeToOne");
+var twoButton = document.getElementById("changeToTwo");
+var headerText = document.getElementById("zero");
+
+oneButton.addEventListener("click", changeBlue);
+twoButton.addEventListener("click", changeRed);

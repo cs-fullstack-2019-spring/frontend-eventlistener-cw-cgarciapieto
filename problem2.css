@@ -33,7 +33,14 @@ html, body{
 
 header, aside, article, footer{
     border: 1px solid cornflowerblue;
-    background-color: lightseagreen;
+    /*background-color: lightseagreen;*/
+    text-align: center;
+    font-size: 40px;
+}
+
+.redBackground
+{
+    background: red;
 }
 
 .blueBackground
